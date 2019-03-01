@@ -1,0 +1,514 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify
+% XeLaTeX as the engine in your editor or script
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+% \rhead{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{paracol}{2} % Begin the multi-column environment
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CURRICULUM VITAE TEXT
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.08\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+	\vspace{-0.02\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\centering % Centre text
+	{\sffamily\Huge Benjamin Benni} % Your name
+	% {\Huge\color{headings}\cvtextfont Curriculum Vitae}
+}
+
+%----------------------------------------------------------------------------------------
+%	MAJOR RESEARCH PROJECT
+%----------------------------------------------------------------------------------------
+
+\section{Doctoral Research}
+
+{\raggedright\textbf{``Sharing software composition concerns to make it scale: commonalities and where to find them."}\\\medskip}
+
+My research aimed to study different use-cases of software composition and outline the common abstractions, mechanisms, needs, or solutions.
+This study aims to define an algebra of software composition operators ; allowing them to reuse it instead of (re)implementing her own solution from scratch. So far I outlined commonalities between various domains such as the Docker eco-system, the automated improvement of Android applications or the Linux kernel itself, from the abstractions and the mechanisms point-of-views.
+I believe that thanks to the high-level of technicity of the covered topics bound to the variaty allowed me to laid the foundation for further experimental validation and further development of practical outcomes.
+In parallel, I took part in different courses, from undergraduate (e.g. tutoring, 1 week full-time project) to graduate ones (e.g. reverse engineering, DevOps).
+
+
+(1st workshop on data \& models - bellair Institute)
+
+\medskip % Extra whitespace before the next section
+
+
+
+\section{Teaching}
+
+\course{2018} % Duration
+{Master degre} % Employer
+{Reverse Engineering}  % Job title
+{
+This course talks about software maintenance and evolution.
+How maintain a software, how to evolve a code-base that we don't know, how elaborate a scientific procedure, define hypothesis and how to assess them ; are part of the questions we encountered. I supervised three teams of four, building, refining their respective questions and validate their work iteratively.
+} % Description
+
+\course{2016-2018} % Duration
+{Bachelor degree} % Employer
+{Tutoring}  % Job title
+{I created a dedicated tutoring course for new students from scratch. This course aims to help students. It goes through case studies and basic examples to make students understand concepts related to softwares, algorithms and Object Oriented Programming, in a Java world, using an Integrated Development Environment.} % Description
+
+\course{2016-2018} % Duration
+{Bachelor degree} % Employer
+{Full-time project}  % Job title
+{Each year, third year students have a full-time project. We either take Google Hashcode qualification subject or custom societal subject. We wrote the main subject along with extensions, followed and coached 21 teams of 4 each during this project. At the end of the week, they deliver their solution and their technical report. Students were asked to develop by iterations (called milestones), adopt a scientific approach to elaborate benchmarks or visualisations.} % Description
+
+
+
+\course{2017} % Duration
+{Master degre} % Employer
+{Object-oriented Design}  % Job title
+{
+This course aims to analyse and design software in UML notation. Students have to learn and apply use-cases, sequence and class diagrams I helped to supervise and follow around 60 students during 11 weeks during lab sessions. I took part in the graduation process and support students during the whole lab-project.
+} % Description
+
+\course{2016} % Duration
+{Master degre} % Employer
+{DevOps}  % Job title
+{
+This course is meant to build a complete continous software delivery chain. What does it mean to continously delivering stable software?. We went through unit testing, integration and end-to-end testing, packaging of different artefacts and composition of artefacts. Artefacts were based on Docker platform and worflows made via Jenkins platform.
+} % Description
+
+
+\course{2016} % Duration
+{Secondary school} % Employer
+{Medites}  % Job title
+{This tutoring course was made for secondary school students. They build a robot (Lego Mindstorm) and write software to take actions in an emergency-situation. We focused on team work, scheduling, splitting work in small tasks, and inter-disciplinary notions. We talked about problem analysis and how to build a robot that can solve it ; how a physical phenomenon can be transformed into a measurable metric ; try, fail, analyse, and retry ; how many turns the wheels must do to reach a specific point? They saw logical structures, algorithm, notion of time, concerns-splitting, tests and try, reliability and reproductibiliy of experimental results. I supervised 30 students for 10 weeks, 2 hours each.} % Description
+
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+% Blank \workposition command to add another job:
+
+%\workposition{} % Duration
+%{} % FT/PT (full time or part time)
+%{} % Employer
+%{} % Job title
+%{} % Description
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\workposition{March, June 2016} % Duration
+{FT} % FT/PT (full time or part time)
+{i3s Laboratory, CNRS} % Employer
+{Engineering final year internship, supervised by Philippe Collet}  % Job title
+{How to handle variability issues thanks to composition mechanisms. We model a composition operator as a producer of actions. This representation allowed us to reason on composition sequences for optimization (e.g. parallelize execution of actions) or checking purposes (e.g. constraints checking)} % Description
+
+\workposition{October, March 2016} % Duration
+{PT} % FT/PT (full time or part time)
+{Engineering final year project} % Employer
+{Group project, supervised by Philippe Collet} % Job title
+{Follow-up of the internship with the addition of a Domain Specific Language (DSL) to model energy consumption goals, taking scaling issues into account with writers/workers distributed computing, addition of a communitary dashboard. (six months, 352h/member) } % Description
+
+\workposition{March, September 2015} % Duration
+{FT} % FT/PT (full time or part time)
+{i3s Laboraty, CNRS} % Employer
+{Engineer internship, supervised by Philippe Collet} % Job title
+{Development of Ecoknowledge: a gamified platform at the intersection between energy saving and sensors network. How to define a \emph{goal} from a user point-of-view, how to compute it, show her progression to a final-user, etc. I iteratively built a prototype to show the interest and the feasibility of such platform.} % Description
+
+% \workposition{July, August 2013} % Duration
+% {FT} % FT/PT (full time or part time)
+% {Arago Systems - Technician} % Employer
+% {Development of a webapp and maintenance} % Job title
+% {Follow-up of my internship} % Description
+
+\workposition{April, August 2013} % Duration
+{FT} % FT/PT (full time or part time)
+{Arago Systems} % Employer
+{Development of a benchmark in C\#} % Job title
+{Technician final year internship: physical benchmark to program and handle the end-of-life cycle of electronic board ; followed-up by a full-time job to developp a web application. Themes: automated testing, deployment, maintenance} % Description
+
+
+%------------------------------------------------
+
+\vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+
+
+%----------------------------------------------------------------------------------------
+
+\switchcolumn % Switch to the next paracol column
+
+%----------------------------------------------------------------------------------------
+%	COLOURED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.08\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+	\vspace{-0.02\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\colorbox{shade}{ % Create the coloured box
+		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+			\raisebox{-1pt}{\faHome} & 10 avenue de Brancolar - 06100 Nice, France \\ % Address
+			% \raisebox{-1pt}{\faPhone} & +1 (800) 786-1410 \\ % Phone number
+			\raisebox{0pt}{\small\faEnvelope} & \href{mailto:benni@i3s.unice.fr}{benni@i3s.unice.fr} \\ % Email address
+			\raisebox{-1pt}{\small\faDesktop} & \href{https://www.i3s.unice.fr/~benni}{https://www.i3s.unice.fr/~benni} \\ % Website
+			%\raisebox{-1pt}{\faGithub} & \href{https://github.com/username}{https://github.com/username} \\ % GitHub profile
+			%\raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/username}{https://www.linkedin.com/in/username} \\ % LinkedIn profile
+			% See fontawesome.pdf in the fonts folder for all icons you can use
+		\end{supertabular}
+	}
+}
+
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+% \section{Awards}
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+% \begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+
+	%------------------------------------------------
+
+	% \tableentry{1985}{\textbf{Faculty of Science Masters Scholarship}}{}
+	% \tableentry{}{\textit{Massachusetts Institute of Technology}}{spaceafter}
+
+	%------------------------------------------------
+
+	% \tableentry{1983}{\textbf{Top Achiever Award -- Physics}}{}
+	% \tableentry{}{\textit{The University of Washington}}{spaceafter}
+
+	%------------------------------------------------
+
+% \end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+% \section{Skills}
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+% \begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+
+	%------------------------------------------------
+
+	% \tableentry{Beginner}{Java, MS DOS}{spaceafter}
+
+	%------------------------------------------------
+
+	% \tableentry{Intermediate}{Javascript, Python, HTML, CSS}{}
+	% \tableentry{}{Microsoft Windows}{}
+	% \tableentry{}{Computer Hardware \& Support}{spaceafter}
+
+	%------------------------------------------------
+
+	% \tableentry{Expert}{Perl, Unix, \LaTeX}{spaceafter}
+
+	%------------------------------------------------
+
+% \end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS
+%----------------------------------------------------------------------------------------
+
+% \section{Communication Skills}
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+% \begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+
+	%------------------------------------------------
+
+	% \tableentry{Conferences}{Oral Presentation at the Annual MIT}{}
+	% \tableentry{}{Theoretical Physics Conference -- 1987}{spaceafter}
+
+	%------------------------------------------------
+
+	% \tableentry{Posters}{Poster at the Meeting of the American}{}
+	% \tableentry{}{Physical Society -- 1985}{spaceafter}
+
+	%------------------------------------------------
+
+% \end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS DESCRIPTION
+%----------------------------------------------------------------------------------------
+
+% \section{Skills}
+
+% Example \longformdescription{} command to add another section:
+
+%\longformdescription{Heading}{Description}
+
+%------------------------------------------------
+
+% \longformdescription{Goal Oriented}{I believe in action over long-winded discussions. I listen to everyone's viewpoints and use my judgement to immediately act based on consensus to achieve goals quickly and efficiently.}
+%
+% \longformdescription{Physical Dexterity}{Manual manipulation of experimental equipment and training within Black Mesa (e.g. the Hazard Course) have contributed to an enjoyment of working with my hands.}
+%
+% \longformdescription{Passionate}{I have been interested in theoretical physics such as quantum mechanics and relativity from an early age. My education and research have cemented this interest into a passion. I greatly enjoy carrying out fundamental physics research with potential practical applications.}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+
+% Example \longformdescription{} command to add another publication:
+
+%\longformpublication{Reference (format this manually as desired)}
+
+%------------------------------------------------
+
+\longformpublicationWithDOI{A Delta-oriented Approach to Support the Safe Reuse of Black-box Code Rewriter.}{17th International Conference on Software Reuse (ICSR'18), May 2018, Madrid, France.}{\textbf{Benjamin Benni}, Sébastien Mosser, Naouel Moha, Michel Riveill}{10.1007/978-3-319-90421-4\_11}{firstauthor}
+
+\longformpublicationWithDOI{Supporting Micro-services Deployment in a Safer Way: a Static Analysis and Automated Rewriting Approach.}{Symposium on applied Computing, Apr 2018, Pau, France.}{\textbf{Benjamin Benni}, Sébastien Mosser, Philippe Collet, Michel Riveill}{10.1145/3167132.3167314}{firstauthor}
+
+\longformpublicationWithDOI{Teaching DevOps at the Graduate Level: A report from Polytech Nice Sophia.}{First international workshop on software engineering aspects of continuous development and new paradigms of software production and deployment, Mar 2018, Villebrumier, France.}{\textbf{Benjamin Benni}, Philippe Collet, Guilhem Molines, Sébastien Mosser, Anne-Marie Pinna-Déry. }{10.1007/978-3-030-06019-0\_5}{firstauthor}
+
+% \longformpublication{\textbf{Freeman, G. R.} (1996). Chemistry of Multiply Charged Negative Molecular Ions and Clusters in the Gas Phase:  Terrestrial and in Intense Galactic Magnetic Fields. \textit{The Journal of Physical Chemistry}, \textit{100}(11), 4331-4338.}
+%
+% \longformpublication{Jacobsen, F. M., Gee, N., \textbf{Freeman, G. R.} (1986). Electron mobility in liquid krypton as function of density, temperature, and electric field strength. \textit{Physical Review A}, \textit{34}(3): 2329-2335.}
+
+%------------------------------------------------
+
+% As an alternative to a long-form publication list, you can create a shorter summary using only DOI values and years.
+
+% Example \doipublication{} command to add another publication:
+
+%\doipublication{Year}{DOI}{firstauthor}{spaceafter}
+
+% All four parameters are required (can be empty though)
+% A value of "firstauthor" in the third parameter will print the DOI in bold
+% A "spaceafter" value in the fourth parameter will add some vertical space -- this is to be used between years
+
+%------------------------------------------------
+%
+% \begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+%
+% 	%------------------------------------------------
+%
+% 	\doipublication{1996}{10.1021/jp951483+}{firstauthor}{spaceafter}
+%
+% 	%------------------------------------------------
+%
+% 	\doipublication{1990}{10.1139/p90-097}{firstauthor}{spaceafter}
+% 	\doipublication{1986}{10.1139/v86-297}{}{}
+%
+% 	%------------------------------------------------
+%
+% 	\doipublication{1986}{10.1103/PhysRevA.34.2329}{}{spaceafter}
+%
+% 	%------------------------------------------------
+%
+% 	& \textit{First author publications in} \textbf{bold}\\
+%
+% 	%------------------------------------------------
+%
+% \end{supertabular}
+
+% \medskip % Extra whitespace before the next section
+
+
+\vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+% Blank \educationentry{} command to add another degree:
+
+%\educationentry{} % Duration
+%{} % Degree
+%{} % Honours, achievements or distinctions (e.g. first class honours)
+%{} % Department
+%{} % Institution
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+
+
+		%------------------------------------------------
+
+		\educationentry{now} % Duration
+		{PhD in Computer sciences (3rd year)} % Degree
+		{} % Honours, achievements or distinctions (e.g. first class honours)
+		{Computer Sciences} % Department
+		{Côte d'Azur University (UCA)} % Institution
+
+		%------------------------------------------------
+
+		\educationentry{2016} % Duration
+		{Graduated in Computer Sciences} % Degree
+		{$1^{st}$ software architecture ; $2^{nd}$ of promotion} % Honours, achievements or distinctions (e.g. first class honours)
+		{Computer Sciences Engineering} % Department
+		{Polytech Nice - University of Nice - Sophia-Antipolis} % Institution
+
+	%------------------------------------------------
+
+	\educationentry{2013} % Duration
+	{Technology Degree} % Degree
+	{} % Honours, achievements or distinctions (e.g. first class honours)
+	{Computer sciences} % Department
+	{University of Nice - Sophia-Antipolis} % Institution
+
+	%------------------------------------------------
+
+	\educationentry{2011} % Duration
+	{High school diploma in sciences} % Degree
+	{European section} % Honours, achievements or distinctions (e.g. first class honours)
+	{} % Department
+	{Parc Impérial High School} % Institution
+
+	%------------------------------------------------
+
+\end{supertabular}
+
+
+\vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+
+\section{References}
+
+%\textit{References available on request}
+
+%------------------------------------------------
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+
+	%------------------------------------------------
+
+	\tableentry{}{\textbf{Pr. Michel Riveill}}{spaceafter}
+	% \tableentry{Position}{Professor}{}
+	\tableentry{Employer}{\href{http://i3s.unice.fr/~riveill/}{i3s laboratory}}{}
+	% \tableentry{}{\href{https://web.mit.edu}{\textit{Massachusetts Institute of Technology}}}{spaceafter}
+	\tableentry{Phone}{+33 4 89 15 41 70 (Work)}{}
+	\tableentry{E-mail}{riveill@i3s.unice.fr}{}
+
+	%------------------------------------------------
+
+	\tableentry{}{}{} % Creates some additional whitespace between the references
+
+	%------------------------------------------------
+
+	\tableentry{}{\textbf{Pr. Sebastien Mosser}}{spaceafter}
+	% \tableentry{Position}{Professor}{}
+	\tableentry{Employer}{\href{https://mosser.github.io/}{Université du Québec à Montréal }}{}
+	% \tableentry{}{\href{https://web.mit.edu}{\textit{Massachusetts Institute of Technology}}}{spaceafter}
+	\tableentry{Phone}{(514) 987-3000 poste 3904 (Work)}{}
+	\tableentry{E-mail}{mosser@i3s.unice.fr}{}
+
+	%------------------------------------------------
+
+	\tableentry{}{}{} % Creates some additional whitespace between the references
+
+	%------------------------------------------------
+
+	\tableentry{}{\textbf{Pr. Philippe Collet}}{spaceafter}
+	% \tableentry{Position}{Professor}{}
+	\tableentry{Employer}{\href{http://www.i3s.unice.fr/Philippe_Collet/}{i3s laboratory}}{}
+	% \tableentry{}{\href{https://web.mit.edu}{\textit{Massachusetts Institute of Technology}}}{spaceafter}
+	\tableentry{Phone}{+33 (0)4 89 15 41 59 (Work)}{}
+	\tableentry{E-mail}{philippe.collet@unice.fr}{}
+
+	%------------------------------------------------
+
+	\tableentry{}{}{} % Creates some additional whitespace between the references
+
+	%------------------------------------------------
+
+	\tableentry{}{\textbf{Pr. Igor Litovsky, head of C.S Department}}{}
+	% \tableentry{Position}{Professor}{}
+	\tableentry{Employer}{\href{http://www.i3s.unice.fr/Philippe_Collet/}{PolytechNice}}{}
+	% \tableentry{}{\href{https://web.mit.edu}{\textit{Massachusetts Institute of Technology}}}{spaceafter}
+	\tableentry{Phone}{+33 4 89 15 41 66 (Work)}{}
+	\tableentry{E-mail}{Igor.LITOVSKY@univ-cotedazur.fr }{}
+
+	%------------------------------------------------
+
+\end{supertabular}
+
+% \medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+
+\end{paracol}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
