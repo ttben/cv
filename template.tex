@@ -1,0 +1,155 @@
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+
+\moderncvstyle{banking}
+% style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{red}
+% color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+
+
+\definecolor{color0}{rgb}{0,0,0}% black
+\definecolor{color1}{rgb}{1,0.30,0.1}% red
+\definecolor{color2}{rgb}{0.4,0.4,0.4}% dark grey
+
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+
+
+\usepackage[resetlabels]{multibib}
+
+\newcites{invitedtalks}{Conférences invitées}
+\newcites{journal}{Journaux internationaux}
+\newcites{conferences}{Conférences internationales}
+
+
+
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\name{Benjamin}{Benni}
+\title{Doctorant en informatique}                               % optional, remove / comment the line if not wanted
+\address{10 avenue de branclar}{06100 Nice}{France}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+33 648762558}
+\email{benni@i3s.unice.fr}
+\homepage{www.i3s.unice.fr/\~benni}
+\social[linkedin]{benjamin-benni}
+\social[twitter]{Sensaze}
+\social[github]{ttben}
+
+% \quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Formation}
+
+\cventry{2016-now}{Université Côte d'Azur}{Doctorant en informatique}{}{}{}
+\cventry{2016}{Polytech Nice - Université de Nice - Sophia-Antipolis}{Diplôme d’Ingénieur en informatique}{}{}{Specialité : architecture logicielle. Rang : 1/}
+\cventry{2013}{Université de Nice - Sophia-Antipolis}{Diplôme de technicien en informatique}{}{}{}
+
+
+
+\section{Emplois académiques}
+
+\cventry{2016-2019}{Polytech Nice - Sophia-Antipolis}{Moniteur (Assistant d’enseignement)}{}{}{
+    \begin{itemize}
+        \item Créateur et responsable d'un cours de soutien en programmation, outils de développement, et gestion de projets. 4 heures hebdomadaires, 20 étudiants.
+        \item Assistant de travaux pratiques en conception orientée objets, retro-ingéniérie, DevOps. Participation à la création des sujets de TP, du sujet du projet, du suivi d'équipes projets et de leur évaluation. 1 session, 30 étudiants de maitrise.
+        \item Reponsable d'un projet de fin d'année, en développement logiciel. Création du sujet, suivi des équipes, notation des rapports d'expertise et du code délivré. Une semaine à temps plein, environ 90 étudiants.
+        \item Intervenant dans une école dans le cadre d'une vulgarisation de l'informatique et de la robotique. Projet MEDITES. 3 mois, 8 heures mensuelles, 30 étudiants.
+    \end{itemize}
+}
+
+
+% \section{Enseignements}
+\section{Service professionnel}
+
+\cvitem{Relecteur}{
+        \begin{itemize}
+            \item DevOps	
+            \item \textit{Microservices Science and Engineering} (MSE)
+        \end{itemize}
+}
+\cvitem{Laboratoire}{
+        \begin{itemize}
+            \item Membre élu du conseil de laboratoire depuis 2016
+            \item Organisateur d'évènements informels (2016--2018)
+        \end{itemize}
+}
+\cvitem{Représentation école}{
+        \begin{itemize}
+            \item Encadrant de la \textit{Nuit de l’Informatique} (2016--2017)
+            \item Participant aux journées portes ouvertes (2017--2018)
+        \end{itemize}
+}
+
+\section{Publications}
+
+\nociteconferences{*}
+\bibliographystyleconferences{plain}
+\bibliographyconferences{internationales_conferences.bib}
+
+\nociteinvitedtalks{*}
+\bibliographystyleinvitedtalks{plain}
+\bibliographyinvitedtalks{invited_conf.bib}
+
+\nocitejournal{*}
+\bibliographystylejournal{plain}
+\bibliographyjournal{journal.bib}
+
+
+\section{References}
+    \begin{cvcolumns}
+        \cvcolumn{Pr. Michel Riveill}{
+            \fixedphonesymbol{+33 4 89 15 41 70}\\
+            \emailsymbol{riveill@i3s.unice.fr}\\
+            \homepagesymbol{www.i3s.unice.fr/\~riveill}
+        }
+        \cvcolumn{Pr. Sébastien Mosser}{
+            \fixedphonesymbol{(514) 987-3000 poste 3904}\\
+            \emailsymbol{mosser@i3s.unice.fr}\\
+            \homepagesymbol{https://mosser.github.io}
+        }       
+       \cvcolumn{Pr. Philippe Collet}{
+            \fixedphonesymbol{+33 4 89 15 41 59}\\
+            \emailsymbol{philippe.collet@unice.fr}\\
+            \homepagesymbol{www.i3s.unice.fr/\~collet}
+        }
+    \end{cvcolumns}
+    
+    \begin{cvcolumns}
+        \cvcolumn[0.35]{Pr. Igor Litovsky}{
+            \fixedphonesymbol{+33 4 89 15 41 66 }\\
+            \emailsymbol{igor.litovsky@univ-cotedazur.fr}\\
+        }
+        \cvcolumn[0.4]{Pr. Jean-Michel Bruel}{
+            \fixedphonesymbol{+33 6 07 65 19 70}\\
+            \emailsymbol{bruel@irit.fr}\\
+            \homepagesymbol{https://jmbruel.github.io/smartjmb/}
+        }
+        \cvcolumn{}{}
+    \end{cvcolumns}
+
+\end{document}
+
