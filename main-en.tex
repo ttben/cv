@@ -1,0 +1,214 @@
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+
+\moderncvstyle{banking}
+% style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{red}
+% color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+
+
+\definecolor{color0}{rgb}{0,0,0}% black
+\definecolor{color1}{rgb}{1,0.30,0.1}% red
+\definecolor{color2}{rgb}{0.4,0.4,0.4}% dark grey
+
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+
+
+\usepackage[resetlabels]{multibib}
+
+\newcites{journal}{Journaux internationaux}
+\newcites{invitedtalks}{Conférences invitées}
+\newcites{conferences}{Conférences internationales}
+\newcites{workshops}{Ateliers internationaux}
+
+
+
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\name{Benjamin}{Benni}
+\title{Ph.D. student in Computer Sciences}                               % optional, remove / comment the line if not wanted
+\address{10 avenue de Brancolar, Résidence Le Val Fleuri, Bâtiment A}{06100 Nice}{France}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+% \phone[mobile]{+33 648762558}
+\email{benni@i3s.unice.fr}
+\homepage{www.i3s.unice.fr/\~benni}
+\social[linkedin]{benjamin-benni}
+% \social[twitter]{Sensaze}
+% \social[github]{ttben}
+
+% \quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\def \spacesBetweenCVEntries {5pt}
+\def \spacesBetweenItems {4pt}
+
+\section{Education}
+
+\cventry{}{Université Côte d'Azur}{Ph.D. Student in Computer Sciences}{2016-now.}{}{
+        \begin{itemize}
+            \setlength\itemsep{\spacesBetweenItems}
+            \item Title : Enabling domain-independent reasonings on composition of black-box composition operators.
+            \item Supervisors : Michel Riveill \& Sébastien Mosser
+            \item Examiners : Olivier Barais (Univ. Rennes I, FR), Gunter Mussbacher (Univ. Mc Gill, CA) \& Lionel Seinturier (Univ. Lille, FR)
+        \end{itemize}
+}
+\vspace{\spacesBetweenCVEntries}
+\cventry{}{Polytech Nice - Université de Nice - Sophia-Antipolis}{Engineer in Computer Sciences}{2016}{}{Rank : 2/109, Specialty in software architecture, rank : 1/36}
+\vspace{\spacesBetweenCVEntries}
+\cventry{}{Université de Nice - Sophia-Antipolis}{Technology degree in Computer Sciences (DUT)}{2013}{}{}
+\vspace{\spacesBetweenCVEntries}
+\cventry{}{Parc Impérial}{Bachelor's degree in sciences}{2011}{Italian european class}{}
+
+
+
+\section{Academic Employment}
+
+\cventry{2016-2019}{Polytech Nice - Sophia-Antipolis}{Teaching assistant}{}{}{
+    \vspace{\spacesBetweenCVEntries}
+    \begin{itemize}
+        \setlength\itemsep{\spacesBetweenItems}
+        \item Creator and instructor of a programming, development tools, and project managment tutoring course. 1 session, 4 hours weekly, 20 students.
+        % Créateur et responsable d'un cours de soutien en programmation, outils de développement, et gestion de projets. 1 session, 4 heures hebdomadaires, 20 étudiants.
+        \item Lab assistant for objects-oriented design, retro-engineering and DevOps courses. I took part in creating labs sessions and projects, managed, followed-up and graded teams. 1 session, 4 hours each course, 30 master students.
+        % Assistant de travaux pratiques dans les cours de conception orientée objets, retro-ingéniérie, et DevOps. Participation à la création des sujets de TP, du sujet du projet, du suivi d'équipes projets et de leur évaluation. 1 session, 4 heures chaque, 30 étudiants de maitrise.
+        \item In charge of end-semester development projects. I wrote projects' topics and schedule, managed and followed-up teams, graded expertise reports and code deliveries. 1 full-time week, around 90 students, 22 teams.
+        % Reponsable d'un projet de fin d'année, en développement logiciel. Création du sujet, suivi des équipes, notation des rapports d'expertise et du code délivré. Une semaine à temps plein, environ 90 étudiants.
+        \item  Popularizing computer sciences and robotics as part of the MEDITES project. I was a teaching assistant in a middle-school. 3 months, 8 hours monthly, 30 pupils.
+        % Intervenant dans une école dans le cadre d'une vulgarisation de l'informatique et de la robotique. Projet MEDITES. 3 mois, 8 heures mensuelles, 30 étudiants.
+    \end{itemize}
+}
+
+\newpage
+\section{Recherche}
+My research interests are software composition and its related scaling issues.
+My Ph.D. thesis analyzed different domain-specific black-box composition operators~\cite{benni:hal-01659776,benni:hal-01722040}. 
+In such a context where the operators' definitions and implementation are not known, the contribution was to provide assessments and property-verifications, without knowing our the operators work, in a domain-independant way.
+The main approach is to compute modifications operated by a black-box operator, and relies on these to define properties such as conflicts-free situations and termination.
+We validated our contribution against real-life use-cases such as the Linux kernel or the Docker ecosystems.
+
+% Mes intérêts de recherche portent sur la composition logicielle et son passage à l'échelle. Ma thèse a porté sur l'analyse de différents opérateurs de composition en boite noire, chacun étant spécifique à un domaine applicatif~\cite{benni:hal-01659776,benni:hal-01722040}. L'approche adoptée raisonne sur des modifications au lieu de modèles. Elle permet à la fois d'être compatibles avec les définitions existantes, mais aussi de définir des propriétés réutilisables ainsi que leur vérification, indépendament des domaines applicatifs et de la manière dont sont implémentés les opérateurs. Cela a permis de vérifier des compositions existantes et utiliser dans des contextes industriels, et ce, de manière indépendante du domaine sous-jacent, menant ainsi à la définition d'artefacts de composition réutilisables~\cite{doi:10.1002/smr.2208}.
+
+% \section{Enseignements}
+\section{Service professionnel}
+\vspace{\spacesBetweenCVEntries}
+
+\cvitem{Reviewer}{
+        \begin{itemize}
+            \setlength\itemsep{\spacesBetweenItems}
+            \item DevOps@Models Workshop - Models 2019 satellite events
+            \item DevOps 18 - LASER Foundatin
+            \item \textit{Microservices Science and Engineering} (MSE)
+        \end{itemize}
+}
+\vspace{\spacesBetweenCVEntries}
+
+\cvitem{Community}{
+        \begin{itemize}
+            \item Student volunteer at the International Conference in Software Engineering (ICSE 2019) ~ 1000 attendees
+        \end{itemize}
+}
+\vspace{\spacesBetweenCVEntries}
+\cvitem{Laboratory}{
+        \begin{itemize}
+            \setlength\itemsep{\spacesBetweenItems}
+            \item Elected member of the I3S laboratory council since 2016
+            \item Organizer of informal social events (2016--2018)
+        \end{itemize}
+}
+\vspace{\spacesBetweenCVEntries}
+\cvitem{School representation}{
+        \begin{itemize}
+            \setlength\itemsep{\spacesBetweenItems}
+            \item Supervisor at the \textit{Nuit de l’Informatique} ~100 attendees (2016--2017)
+            \item Demonstrations at the schools' open-days (2017--2018)
+        \end{itemize}
+}
+
+\section{Publications}
+\nocite{*}
+
+\nocitejournal{*}
+\bibliographystylejournal{plain}
+\bibliographyjournal{journal.bib}
+
+\nociteinvitedtalks{*}
+\bibliographystyleinvitedtalks{plain}
+\bibliographyinvitedtalks{invited_conf.bib}
+
+\nociteconferences{*}
+\bibliographystyleconferences{plain}
+\bibliographyconferences{internationales_conferences.bib}
+
+\nociteworkshops{*}
+\bibliographystyleworkshops{plain}
+\bibliographyworkshops{workshops.bib}
+
+
+\section{References}
+    \begin{cvcolumns}
+        \cvcolumn{Pr. Michel Riveill}{
+            \fixedphonesymbol{+33 4 89 15 41 70}\\
+            \emailsymbol{riveill@i3s.unice.fr}\\
+            \homepagesymbol{www.i3s.unice.fr/\~riveill}
+        }
+        \cvcolumn{Pr. Sébastien Mosser}{
+            \fixedphonesymbol{(514) 987-3000 poste 3904}\\
+            \emailsymbol{mosser.sebastien@uqam.ca}\\
+            \homepagesymbol{https://mosser.github.io}
+        }       
+       \cvcolumn{Pr. Philippe Collet}{
+            \fixedphonesymbol{+33 4 89 15 41 59}\\
+            \emailsymbol{philippe.collet@unice.fr}\\
+            \homepagesymbol{www.i3s.unice.fr/\~collet}
+        }
+    \end{cvcolumns}
+    
+    \begin{cvcolumns}
+        \cvcolumn{Pr. Igor Litovsky}{
+            \fixedphonesymbol{+33 4 89 15 41 66 }\\
+            \emailsymbol{igor.litovsky@univ-\\cotedazur.fr}\\
+        }
+        \cvcolumn{Pr. Jean-Michel Bruel}{
+            \fixedphonesymbol{+33 6 07 65 19 70}\\
+            \emailsymbol{bruel@irit.fr}\\
+            \homepagesymbol{https://jmbruel.github.io/\\smartjmb/}
+        }
+        \cvcolumn{Pr. Mireille Blay-Fornarino}{
+            \fixedphonesymbol{+33 4 92 96 51 61}\\
+            \emailsymbol{blay@i3s.unice.fr}\\
+            \homepagesymbol{http://mireilleblayfornarino\\.i3s.unice.fr/}
+        }
+    \end{cvcolumns}
+
+\end{document}
+
+
+\cvcolumn[0.2]{Pr. Mireille Blay-Fornarino}{
+    \fixedphonesymbol{(514) 987-3000 poste 3904}\\
+    \emailsymbol{blay@i3s.unice.fr}\\
+    \homepagesymbol{http://mireilleblayfornarino.i3s.unice.fr/}
+}
