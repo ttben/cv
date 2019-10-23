@@ -24,10 +24,10 @@
 
 \usepackage[resetlabels]{multibib}
 
-\newcites{journal}{Journaux internationaux}
-\newcites{invitedtalks}{Conférences invitées}
-\newcites{conferences}{Conférences internationales}
-\newcites{workshops}{Ateliers internationaux}
+\newcites{journal}{Articles in Journal}
+\newcites{invitedtalks}{Invited Talks}
+\newcites{conferences}{Conference articles}
+\newcites{workshops}{Workshops}
 
 
 
@@ -36,8 +36,9 @@
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 \name{Benjamin}{Benni}
-\title{Ph.D. student in Computer Sciences}                               % optional, remove / comment the line if not wanted
-\address{10 avenue de Brancolar, Résidence Le Val Fleuri, Bâtiment A}{06100 Nice}{France}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\title{Ph.D. student in Software Engineering}                               % optional, remove / comment the line if not wanted
+
+\address{10 avenue de Brancolar, Rés. Le Val Fleuri, Bât A}{06100 Nice}{France}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 % \phone[mobile]{+33 648762558}
 \email{benni@i3s.unice.fr}
 \homepage{www.i3s.unice.fr/\~benni}
@@ -72,16 +73,16 @@
         \begin{itemize}
             \setlength\itemsep{\spacesBetweenItems}
             \item Title : Enabling domain-independent reasonings on composition of black-box composition operators.
-            \item Supervisors : Michel Riveill \& Sébastien Mosser
+            \item Supervisors : Sébastien Mosser \& Michel Riveill 
             \item Examiners : Olivier Barais (Univ. Rennes I, FR), Gunter Mussbacher (Univ. Mc Gill, CA) \& Lionel Seinturier (Univ. Lille, FR)
         \end{itemize}
 }
 \vspace{\spacesBetweenCVEntries}
-\cventry{}{Polytech Nice - Université de Nice - Sophia-Antipolis}{Engineer in Computer Sciences}{2016}{}{Rank : 2/109, Specialty in software architecture, rank : 1/36}
+\cventry{}{Polytech Nice - Université de Nice - Sophia-Antipolis}{Engineer in Computer Sciences}{2016}{}{Rank : 2/109, Major in software architecture, rank : 1/36}
 \vspace{\spacesBetweenCVEntries}
-\cventry{}{Université de Nice - Sophia-Antipolis}{Technology degree in Computer Sciences (DUT)}{2013}{}{}
+\cventry{}{Université de Nice - Sophia-Antipolis}{Technician degree in Computer Sciences (DUT)}{2013}{}{}
 \vspace{\spacesBetweenCVEntries}
-\cventry{}{Parc Impérial}{Bachelor's degree in sciences}{2011}{Italian european class}{}
+\cventry{}{Parc Impérial}{Highschool degree in sciences}{2011}{Italian european class}{}
 
 
 
@@ -91,7 +92,7 @@
     \vspace{\spacesBetweenCVEntries}
     \begin{itemize}
         \setlength\itemsep{\spacesBetweenItems}
-        \item Creator and instructor of a programming, development tools, and project managment tutoring course. 1 session, 4 hours weekly, 20 students.
+        \item Creator and instructor of a programming, development tools, and project managment tutoring course. 1 session, 4 hour/week, 20 students.
         % Créateur et responsable d'un cours de soutien en programmation, outils de développement, et gestion de projets. 1 session, 4 heures hebdomadaires, 20 étudiants.
         \item Lab assistant for objects-oriented design, retro-engineering and DevOps courses. I took part in creating labs sessions and projects, managed, followed-up and graded teams. 1 session, 4 hours each course, 30 master students.
         % Assistant de travaux pratiques dans les cours de conception orientée objets, retro-ingéniérie, et DevOps. Participation à la création des sujets de TP, du sujet du projet, du suivi d'équipes projets et de leur évaluation. 1 session, 4 heures chaque, 30 étudiants de maitrise.
@@ -103,24 +104,24 @@
 }
 
 \newpage
-\section{Recherche}
-My research interests are software composition and its related scaling issues.
+\section{Reseach Interests}
+My research interests are related to software composition and related scaling issues.
 My Ph.D. thesis analyzed different domain-specific black-box composition operators~\cite{benni:hal-01659776,benni:hal-01722040}. 
-In such a context where the operators' definitions and implementation are not known, the contribution was to provide assessments and property-verifications, without knowing our the operators work, in a domain-independant way.
-The main approach is to compute modifications operated by a black-box operator, and relies on these to define properties such as conflicts-free situations and termination.
-We validated our contribution against real-life use-cases such as the Linux kernel or the Docker ecosystems.
+In such a context where the operators' definitions and implementation are not known, the contribution is to provide assessments and property-verifications, without knowing how the operators work, in a domain-independant way.
+The main approach is to compute modifications operated by a black-box operator, and relies on these modifications to define properties' verification such as conflicts-free situations and termination, in a domain-independant way.
+We validated our contribution with real-life use-cases such as the Linux kernel or the Docker ecosystems.
 
 % Mes intérêts de recherche portent sur la composition logicielle et son passage à l'échelle. Ma thèse a porté sur l'analyse de différents opérateurs de composition en boite noire, chacun étant spécifique à un domaine applicatif~\cite{benni:hal-01659776,benni:hal-01722040}. L'approche adoptée raisonne sur des modifications au lieu de modèles. Elle permet à la fois d'être compatibles avec les définitions existantes, mais aussi de définir des propriétés réutilisables ainsi que leur vérification, indépendament des domaines applicatifs et de la manière dont sont implémentés les opérateurs. Cela a permis de vérifier des compositions existantes et utiliser dans des contextes industriels, et ce, de manière indépendante du domaine sous-jacent, menant ainsi à la définition d'artefacts de composition réutilisables~\cite{doi:10.1002/smr.2208}.
 
 % \section{Enseignements}
-\section{Service professionnel}
+\section{Professional Service}
 \vspace{\spacesBetweenCVEntries}
 
 \cvitem{Reviewer}{
         \begin{itemize}
             \setlength\itemsep{\spacesBetweenItems}
             \item DevOps@Models Workshop - Models 2019 satellite events
-            \item DevOps 18 - LASER Foundatin
+            \item DevOps 18 - LASER Foundation
             \item \textit{Microservices Science and Engineering} (MSE)
         \end{itemize}
 }
@@ -128,7 +129,7 @@ We validated our contribution against real-life use-cases such as the Linux kern
 
 \cvitem{Community}{
         \begin{itemize}
-            \item Student volunteer at the International Conference in Software Engineering (ICSE 2019) ~ 1000 attendees
+            \item Student volunteer at the International Conference in Software Engineering (ICSE 2019), \~ 1000 attendees
         \end{itemize}
 }
 \vspace{\spacesBetweenCVEntries}
@@ -143,7 +144,7 @@ We validated our contribution against real-life use-cases such as the Linux kern
 \cvitem{School representation}{
         \begin{itemize}
             \setlength\itemsep{\spacesBetweenItems}
-            \item Supervisor at the \textit{Nuit de l’Informatique} ~100 attendees (2016--2017)
+            \item Supervisor at the \textit{Nuit de l’Informatique}, \~100 attendees (2016--2017)
             \item Demonstrations at the schools' open-days (2017--2018)
         \end{itemize}
 }
@@ -188,9 +189,9 @@ We validated our contribution against real-life use-cases such as the Linux kern
     \end{cvcolumns}
     
     \begin{cvcolumns}
-        \cvcolumn{Pr. Igor Litovsky}{
-            \fixedphonesymbol{+33 4 89 15 41 66 }\\
-            \emailsymbol{igor.litovsky@univ-\\cotedazur.fr}\\
+        \cvcolumn{Pr. Christophe Papazian}{
+            \fixedphonesymbol{+33 4 89 15 43 60 }\\
+            \emailsymbol{papazian@i3s.unice.fr}\\
         }
         \cvcolumn{Pr. Jean-Michel Bruel}{
             \fixedphonesymbol{+33 6 07 65 19 70}\\
